@@ -10,6 +10,7 @@ export class AppComponent {
   name: string = "no name yet";
   h1Color:string ="red";
   isHidden: boolean = false;
+  txtValue: string = "initial value";
   
   setName(): void {
     this.name = "Armon";
@@ -19,6 +20,9 @@ export class AppComponent {
   }
   flipHidden(): void {
     this.isHidden = !this.isHidden;
+  }
+  setTxtValue(val: string):void {
+    this.txtValue = val;
   }
 }
 

@@ -3,4 +3,9 @@
   <button (click)="setName()"> Change Name</button> |
   <button (click)=toggleColor()> Toggle Color</button> |
   <button (click)=flipHidden()> Flip Hidden</button>
+  <div>
+    <input [(ngModel)] ="txtValue" type="text">
+    | <label >{{txtValue}} </label>
+    |<button (click)="setTxtValue('WTE!')">WTE! </button>
+  </div>
 </div>
